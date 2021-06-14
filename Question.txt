@@ -1,0 +1,21 @@
+Create a client and server app that follows TCP mode of communication.
+
+client: displays graphs and 3d objects.
+	1. The user should asks for the dimension to be viewed
+	2. if 2D:
+		a. The user is prompted to enter range, i.e if 100 is given all points returned will be between 1 and 100
+		b. Number of points, 10, 20 and 30
+		c. type of graph
+		d. finally the request is sent to server which inturns gives back a set of data that can be used to plot graph in widget
+	3. if 3D:
+		a. user is prompted to choose a figure
+		b. After selection the data is sent to server the server returns a set of data which can be used to plot a 3D figure
+	4. Navigation tools needed for navigation must be created
+
+Server: gets the request processes it and sends back required data
+
+Use the following packages:
+1. PyQt5/PySide6
+2. PyVista
+3. PyQtgraphs
+4. numpy
